@@ -14,11 +14,11 @@ const Contact = () => {
     setStatus('loading');
 
     // Replace with your actual n8n webhook URL
-    const N8N_WEBHOOK_URL = 'https://your-n8n-instance.com/webhook/portfolio-contact';
+    const N8N_WEBHOOK_URL = 'https://n8n-portfolio.onrender.com/webhook/portfolio-contact';
 
     try {
       // In production, uncomment the fetch block
-      /*
+      
       const response = await fetch(N8N_WEBHOOK_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -26,7 +26,7 @@ const Contact = () => {
       });
       if (response.ok) setStatus('success');
       else setStatus('error');
-      */
+      
       
       // Simulating success for demo
       await new Promise(r => setTimeout(r, 1500));
@@ -139,10 +139,10 @@ const Contact = () => {
             <a href="https://github.com/pratikshmalik05" target="_blank" rel="noreferrer" style={{ color: 'var(--text-muted)', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>
               <Github size={24} />
             </a>
-            <a href="#" style={{ color: 'var(--text-muted)', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>
+            <a href="https://www.linkedin.com/in/pratiksh-malik-91984b367/" style={{ color: 'var(--text-muted)', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>
               <Linkedin size={24} />
             </a>
-            <a href="#" style={{ color: 'var(--text-muted)', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>
+            <a href="https://x.com/PratikshM60725" style={{ color: 'var(--text-muted)', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>
               <Twitter size={24} />
             </a>
           </div>
