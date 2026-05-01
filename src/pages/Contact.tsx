@@ -21,7 +21,7 @@ const Contact = () => {
       
       await fetch(N8N_WEBHOOK_URL, {
   method: "POST",
-  mode: "no-cors",
+ 
   headers: {
     "Content-Type": "application/json",
   },
