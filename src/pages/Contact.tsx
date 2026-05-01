@@ -14,20 +14,19 @@ const Contact = () => {
     setStatus('loading');
 
     // Replace with your actual n8n webhook URL
-    const N8N_WEBHOOK_URL = 'https://n8n-portfolio.onrender.com/webhook/portfolio-contact';
+    const N8N_WEBHOOK_URL =  "/api/contact";
 
     try {
-      // In production, uncomment the fetch block
       
-      await fetch(N8N_WEBHOOK_URL, {
+      
+     await fetch(N8N_WEBHOOK_URL, {
   method: "POST",
- 
   headers: {
     "Content-Type": "application/json",
   },
   body: JSON.stringify(formState),
 });
-      
+        
       
       // Simulating success for demo
       await new Promise(r => setTimeout(r, 1500));
