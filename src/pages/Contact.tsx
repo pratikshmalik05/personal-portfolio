@@ -19,13 +19,14 @@ const Contact = () => {
     try {
       // In production, uncomment the fetch block
       
-      const response = await fetch(N8N_WEBHOOK_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formState)
-      });
-      if (response.ok) setStatus('success');
-      else setStatus('error');
+      await fetch(N8N_WEBHOOK_URL, {
+  method: "POST",
+  mode: "no-cors",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(formState),
+});
       
       
       // Simulating success for demo
