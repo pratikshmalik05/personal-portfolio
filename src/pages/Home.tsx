@@ -54,7 +54,7 @@ const Home = ({ onNavigate }) => {
       </div>
 
       <h1 style={{ fontSize: '3.5rem', fontWeight: 700, margin: '1rem 0' }}>
-        Pratik Malik
+        Pratiksh Malik
       </h1>
       
       <div style={{ fontSize: '1.5rem', fontWeight: 500, height: '2rem', marginBottom: '1.5rem' }}>
